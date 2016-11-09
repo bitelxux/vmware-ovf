@@ -7,4 +7,10 @@ users:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsv2DJ5i5GkZcOHJ3Xakub9MWHrYzXgTNT0kWDjh0slEkECqkMZkiRWmkMUPn9/wf+dip0hlPtxWeOruZe8Nssu+aE/vkxWc1wLvBsINVVXiPmptFDo6jJTG0zlR8tuRyVvptouOnTrg30Z3CvJcIxOPUFivMaEYofnfa12wNOmrOBb1vXrFpQMNhPemPD+49fUc5JxO5+oiNfZN3wbU9jU6UjyxkjwoT0OXjg6Z6nCKKajNG0N6GVQod5Y/baPqWsTEA+Z5ybGVB6e4j9iIFYRfq51AHYKlKL70MvftWIWnH86I7NF5VnNS70/QKLt5wOLBVVNoNsqXD4h+Ak/XX3 root@cnn
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
 
+chpasswd:
+  list: |
+    guest:passw0rd
+    root:passw0rd
+  expire: False
+
 final_message: "The system is up, after $UPTIME seconds"
